@@ -12,13 +12,16 @@ Adiciona o repositório Helm do Grafana:
 Adiciona o repositório Helm da comunidade Prometheus.
 ``` helm repo add prometheus-community https://prometheus-community.github.io/helm-charts ```
 
-Instala o Grafana no namespace "monitoring" usando as configurações padrão do Helm:
+Instala o Grafana no namespace *monitoring* usando as configurações padrão do Helm:
+
 ``` helm install grafana grafana/grafana --namespace monitoring ```
 
-Instala o Prometheus no namespace "monitoring" usando a configuração personalizada do arquivo values.yaml:
-``` helm install prometheus prometheus-community/prometheus --namespace monitoring -f values.yaml```
+Instala o Prometheus no namespace *monitoring* usando a configuração personalizada do arquivo values.yaml:
+
+``` helm install prometheus prometheus-community/prometheus --namespace monitoring -f values.yaml ```
 
 Após tudo instalado, foi verificado qual porta foi alocado para o Grafana e Prometheus através do comando:
+
 ``` kubectl get svc  --namespace monitoring ```
 
 As outras configurações foram realizadas diretamente no dashboard do Grafana, onde inserimos o IP referente ao Prometheus, escolhemos o tipo de dashboard e configuramos alguns alertas focados nos recursos das instâncias.
