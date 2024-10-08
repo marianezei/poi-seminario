@@ -40,4 +40,9 @@ https://grafana.com/grafana/dashboards/
 - Para saber mais sobre o blackbox:
 https://github.com/prometheus/blackbox_exporter
 
+## Aplicação
+
+A aplicação utilizada foi a OnlineBoutique. Um e-commerce web onde os usuários podem buscar items, adicionar os items ao carrinho e efetuar compras. A aplicação já foi utilizada pela Google para realização de benchmarks.
+
+O repositório da aplicação se encontra [aqui](https://github.com/GoogleCloudPlatform/microservices-demo.git) 
 
